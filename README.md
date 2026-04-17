@@ -44,7 +44,7 @@ docker run --rm --runtime=nvidia \
 docker run --rm --runtime=nvidia \
     -v "$(pwd)/onnx_models:/workspace/onnx_models" \
     dinov2-export \
-    python3 export_dinov2_onnx.py --model-size large
+    python3 export_dinov2_onnx.py --model-size base
 ```
 
 | 크기 | 임베딩 차원 | 파라미터 |
