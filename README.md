@@ -83,8 +83,8 @@ make -j
 ### 4.1 기본 실행 (GUI)
 
 ```bash
-./build/clip_retrieval \
-    dinov2_vitb14_fp16.engine \
+./clip_retrieval \
+    ../dinov2_vitb14_fp16.engine \
     /path/to/database_folder \
     /path/to/query_folder
 ```
@@ -98,8 +98,8 @@ make -j
 ssh로 접속했거나 디스플레이가 없을 때:
 
 ```bash
-./build/clip_retrieval \
-    dinov2_vitb14_fp16.engine \
+./clip_retrieval \
+    ../dinov2_vitb14_fp16.engine \
     /path/to/database_folder \
     /path/to/query_folder \
     --save-dir results/
@@ -122,8 +122,8 @@ ssh로 접속했거나 디스플레이가 없을 때:
 같은 폴더를 DB와 쿼리로 줘서 자기 자신이 1위로 나오는지 확인:
 
 ```bash
-./build/clip_retrieval \
-    dinov2_vitb14_fp16.engine \
+./clip_retrieval \
+    ../dinov2_vitb14_fp16.engine \
     /path/to/images \
     /path/to/images \
     --save-dir results/ --top-k 1
